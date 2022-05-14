@@ -1,13 +1,13 @@
 # remote-control-pc
 
 ## 기본 아키텍처
-Primary-Secondary 구조, 1:N 의 별형 topology 사용
+Master/Slave 구조, 1:N 의 별형 topology 사용
 
-## Primary
+## Host(Master)
 - 중앙에서 Secondary를 관리하고, 명령을 내리는 Control-Tower 역할 수행
 - 각 Secondary를 관리하는 UI를 가진다.
 
-## Secondary
+## Device(Slave)
 - GUI-less 프로그램
 - Primary에서 오는 요청을 처리
 - 배포성을 고려하여 자동 업데이트 기능 지원
